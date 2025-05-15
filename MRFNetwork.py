@@ -3,7 +3,6 @@ from scipy.optimize import fmin_l_bfgs_b
 from sklearn.feature_extraction.image import reconstruct_from_patches_2d, extract_patches_2d
 import scipy.interpolate
 import scipy.ndimage
-
 import numpy as np
 import time
 import os
