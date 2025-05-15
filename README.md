@@ -59,30 +59,6 @@ The below are the results after 50 iterations using 3 different style weights : 
 </tr>
 </table>
 
-## Masked Style Transfer
-Supplying an additional binary mask for each style, we can apply the style to a selected region and preserve the content in other regions.We can also use multiple masks to apply 2 different styles in 2 different regions of the same content image.
-
-Note that with the `mask_transfer.py` script, a single content image can be masked with 1 mask to preserve content in blackend regions and preserve style transfer in whitened regions in the generated image. Currently, only content can be transfered in a post processed manner.
-
-"The Starry Night" is used as the style image in the below images. The mask tries to preserve the woman's shape and color, while applying the style to all other regions. Results are very good, as "The Starry Night" has a tendency to overpower the content shape and color. <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Dawn%20Sky.jpg?raw=true" height=300 width=50% alt="dawn sky anime"> <img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" height=300 width=49%>
-
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Dawn-Sky-Mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Dawn_Sky_masked.jpg?raw=true" height=300 width=49% alt="dawn sky style transfer anime">
-
-<br>
-Another example of masked style transfer is provided below. "Winter Wolf" is used as the content image and "Bamboo Forest" is used as the style image. The mask attempts to preserve the darkened cloudy sky, and apply the style only to the mountains and the wolf itself.
-
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/winter-wolf.jpg?raw=true" height=300 width=50%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/bamboo_forest.jpg?raw=true" height=300 width=49%>
-
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/winter-wolf-mask.jpg?raw=true" height=300 width=50%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/WinterWolf-Masked.jpg?raw=true" height=300 width=49% alt="winter wolf style transfer">
-
-<br>
-These last few images use "Cherry Blossoms" as the content image, and uses two styles : "Candy Style" and Monet's "Water Lillies" using their respective masks to create an image with unique results. <br>
-
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/candy-style.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/water-lilies-1919-2.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Japanese-cherry-widescreen-wallpaper-Picture-1366x768.jpg?raw=true" height=300 width=32%> 
-
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/cherry-blossom-1.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/cherry-blossom-2.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Cherry-Blossoms.jpg?raw=true" height=300 width=32%>
-
 ## All Transfer Techniques
 Each of these techniques can be used together, or in stages to generate stunning images. 
 
