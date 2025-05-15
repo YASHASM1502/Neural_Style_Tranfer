@@ -21,22 +21,6 @@ PyTorch provides a comprehensive tutorial on implementing NST, which includes:
 <br><br> DeepArt.io result (1000 iterations and using improvements such as Markov Random Field Regularization) <br>
 <img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/output/DeepArt_Blue_Moon_Lake.jpg" width=98% height=450>
 
-## Style Transfer with Color Preservation
-An example of color preservation with Kinkaku-ji, a Buddhist temple, as the content image and Monet's "Water Lilies" as the art style: <br><br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Kinkaku-ji.jpg?raw=true" height=300 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/water-lilies-1919-2.jpg?raw=true" height=300 width=49%> <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Jukai_color_preservation.jpg?raw=true" height=300 width=49% alt="Kinkaku color preservation"> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Jukai.jpg?raw=true" width=49% height=300 alt="kinkaku style transfer">
-<br><br> As an example, here are two images of the Sagano Bamboo Forest with the "pattened-leaf" style, with and without color preservation <br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/sagano_bamboo_forest.jpg?raw=true" height=450 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/patterned_leaves.jpg?raw=true" height=450 width=49%>
-<br>
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Bamboo-Fores.jpg?raw=true" height=450 width=49% alt="sagano bamboo forest style transfer color preservation"> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Bamboo-Forest-No-Color-Preservation.jpg?raw=true" height=450 width=49% alt="sagano bamboo forest style transfer"> <br><br>
-
-Color preservation can also be done using a mask. Using the `color_transfer.py` script and supplying a mask image, in which white regions will allow the content's colors to be transfered and black regions will keep the style-generated colors.
-
-Below, the content image is "Sunlit Mountain", with the style image as "Seated Nude" by Picasso. Notice that the color preservation mask ensures that color transfer occurs only for the sky region, while the mountains are untouched.
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/content/Sunlit%20Mountains.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/mask/Sunlit%20Mountains%20Color%20Mask.jpg?raw=true" height=300 width=33%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/inputs/style/seated-nude.jpg?raw=true" height=300 width=32%>
-
-<img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Sunlit-Mountain.jpg?raw=true" height=300 width=49%> <img src="https://github.com/titu1994/Neural-Style-Transfer/blob/master/images/output/Sunlit-Mountain_color_preservation.jpg?raw=true" height=300 width=50%>
-
 ## Style Interpolation
 Style weight and Content weight can be manipulated to get drastically different results.
 
