@@ -1,27 +1,4 @@
 # Neural Style Transfer & Neural Doodles
-Implementation of Neural Style Transfer from the paper <a href="http://arxiv.org/abs/1508.06576">A Neural Algorithm of Artistic Style</a> in Keras 2.0+
-
-INetwork implements and focuses on certain improvements suggested in <a href="http://arxiv.org/abs/1605.04603">Improving the Neural Algorithm of Artistic Style</a>. 
-
-Color Preservation is based on the paper [Preserving Color in Neural Artistic Style Transfer](https://arxiv.org/abs/1606.05897).
-
-Masked Style Transfer is based on the paper [Show, Divide and Neural: Weighted Style Transfer](http://cs231n.stanford.edu/reports/2016/pdfs/208_Report.pdf)
-
-## Colaboratory Support
-
-[This codebase can now be run directly from colaboratory using the following link](https://colab.research.google.com/github/titu1994/Neural-Style-Transfer/blob/master/NeuralStyleTransfer.ipynb), or by opening `NeuralStyleTransfer.ipynb` and visiting the Colab link.
-
-Colab link supports almost all of the additional arguments, except of the masking ones. They will probably be added at a later date.
-
-**NOTE :** Make sure you use a GPU in Colab or else the notebook will fail. To change Runtimes : `Runtime -> Change Runtime type ->`. Here select Python 3 and GPU as the hardware accelerator. 
-
-## Guide
-
-See the <a href="https://github.com/titu1994/Neural-Style-Transfer/blob/master/Guide.md">guide</a> for details regarding how to use the script to achieve the best results
-
-It also explains how to setup Theano (with GPU support) on both Windows and Linux. Theano on Windows is a long and tedious process, so the guide can speed up the process by simply letting you finish all the steps in the correct order, so as not to screw up the finicky Theano + Windows setup.
-
-The **Script Helper** program can be downloaded from the Releases tab of this repository, [Script Helper Releases](https://github.com/titu1994/Neural-Style-Transfer/releases). Extract it into any folder and run the `Neural Style Transfer.exe` program. On Linux, you will need to install Mono C# to run the script helper program.
 
 # Examples
 ## Single Style Transfer
