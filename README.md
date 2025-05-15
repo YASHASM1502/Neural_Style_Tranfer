@@ -1,5 +1,18 @@
 # Neural Style Transfer & Neural Doodles
 
+Neural Style Transfer (NST) is a fascinating technique in deep learning that combines the content of one image with the style of another, producing a new image that maintains the original content but adopts the artistic style of the second image. This method was introduced by Gatys et al. in their seminal paper, "A Neural Algorithm of Artistic Style" .
+
+# Implementing Neural Style Transfer
+There are several ways to implement NST, with popular frameworks being PyTorch and TensorFlow.
+
+Using PyTorch
+PyTorch provides a comprehensive tutorial on implementing NST, which includes:
+
+-> Loading and preprocessing images.
+
+-> Defining the model and loss functions.
+
+-> Running the style transfer optimization
 # Examples
 ## Single Style Transfer
 <img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/content/blue-moon-lake.jpg" width=49% height=300 alt="blue moon lake"> <img src="https://raw.githubusercontent.com/titu1994/Neural_Style_Transfer/master/images/inputs/style/starry_night.jpg" width=49% height=300 alt="starry night">
